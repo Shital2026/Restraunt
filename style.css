@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 10px; */
+  height: 80px;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: 1000; */
+  overflow: visible;
+}
+div.logo {
+  font-size: 40px;
+  margin: 0px 20px;
+  color: rgb(244, 173, 9);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+nav ul li {
+  margin-top: 3px;
+}
+
+ul a {
+  margin: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: inline-block;
+
+  padding: 3px 3px;
+}
+ul a:hover {
+  color: #000;
+  background-color: white;
+
+  border-radius: 5px;
+
+  transform: scale(1.1);
+}
+.cart-icon {
+  font-size: 17px;
+  margin: 0 4px;
+
+  margin-top: 6px;
+}
+.cart-icon:hover {
+  cursor: pointer;
+
+  transform: scale(1.01);
+}
+
+.text {
+  display: flex;
+  font-size: 90px;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url(img/rs.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.menu {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #000;
+  color: white;
+  /* font-size: 30px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 30px;
+}
+h3 {
+  margin: 10px 500px;
+  font-size: 50px;
+}
+.items {
+  width: 30%;
+}
+.items img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+#menu h6 {
+  margin-left: 150px;
+  font-size: 50px;
+}
+.menu button {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin: 20px 130px;
+  margin-bottom: 40px;
+}
+.menu button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000;
+}
+.about {
+  scroll-margin-top: 80px;
+  margin-top: 20px;
+}
+.about h2 {
+  margin: 10px 0px;
+}
+.about h4 {
+  font-size: 25px;
+  margin: 10px 0px;
+  margin-top: 30px;
+}
+form {
+  width: 350px;
+  background: #d3d3d3;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.contact {
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgb(184, 184, 183);
+}
+.contact b {
+  font-size: 30px;
+  margin: 20px 680px;
+}
+.contact p {
+  margin-top: 10px;
+  font-size: 19px;
+  font-family: cursive;
+}
+.contact label {
+  margin: 70px 5px;
+  font-weight: bold;
+  height: 60px; /* Textarea की height के बराबर कर दें */
+  line-height: 60px; /* इससे text पूरी height में center आ जाएगा */
+  font-weight: bold;
+}
+#query {
+  margin-top: 18px;
+}
+.contact input {
+  margin-top: 20px;
+  padding: 3px 3px;
+  /* color: #000; */
+  border: 1px solid black;
+}
+.contact h4 {
+  font-size: 25px;
+  /* margin-top: 10px; */
+  margin-top: 30px;
+}
+.contact i {
+  font-size: 30px;
+  margin: 0px 20px;
+  transition: transform 0.3s ease;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+.contact i:hover {
+  /* font-size: 32px; */
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.btn-container {
+  display: flex;
+  justify-content: center; /* बटन को सेंटर में लाने के लिए */
+  gap: 20px; /* दोनों बटन के बीच बराबर स्पेस */
+  margin-top: 15px;
+}
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  min-width: 100px;
+  margin-top: 10px;
+}
+.sumbit-btn {
+  background-color: rgb(19, 200, 19);
+  color: white;
+}
+.clear-btn {
+  background-color: rgb(218, 14, 14);
+  color: white;
+}
+footer {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

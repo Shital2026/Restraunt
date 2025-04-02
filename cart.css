@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+  margin-top: 18px;
+}
+
+table {
+  width: 50%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+h3 {
+  margin-top: 17px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+button#clear {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button#pay {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(4, 176, 41);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button#pay:hover {
+  background-color: rgb(13, 67, 2);
+}
+button#clear:hover {
+  background-color: darkred;
+}
