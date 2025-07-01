@@ -67,3 +67,12 @@ button#pay:hover {
 button#clear:hover {
   background-color: darkred;
 }
+button#goTo {
+  font-size: 20px;
+  background-color: cornsilk;
+  margin-top: 20px;
+}
+button#goTo:hover {
+  background-color: rgb(138, 243, 192);
+  cursor: pointer;
+}

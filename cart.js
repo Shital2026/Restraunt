@@ -29,3 +29,6 @@ function clearCart() {
 }
 
 document.addEventListener("DOMContentLoaded", loadCart);
+function goTomenu() {
+  window.location.href = "index.html#menu";
+}
