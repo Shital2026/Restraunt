@@ -80,7 +80,7 @@ ul a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url(img/rs.jpg);
+  background-image: url(rs.jpg);
   background-size: cover;
   height: 100vh;
 }
