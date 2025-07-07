@@ -1,280 +1,281 @@
+/* RESET & BASE */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  flex-direction: column;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
 }
+
+/* NAVBAR */
 nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0px 10px; */
-  height: 80px;
+  padding: 10px 20px;
   background-color: black;
   color: #fff;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  /* z-index: 1000; */
-  overflow: visible;
+  width: 100%;
+  z-index: 999;
 }
-div.logo {
-  font-size: 40px;
-  margin: 0px 20px;
+
+nav .logo {
+  font-size: 1.8rem;
   color: rgb(244, 173, 9);
 }
 
 nav ul {
   display: flex;
-  list-style: none;
-  margin-right: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
+
 nav ul li {
-  margin-top: 3px;
+  list-style: none;
 }
 
-ul a {
-  margin: 10px 25px;
-  text-decoration: none;
+nav ul a {
   color: #fff;
-  font-size: 15px;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  display: inline-block;
-
-  padding: 3px 3px;
-}
-ul a:hover {
-  color: #000;
-  background-color: white;
-
+  text-decoration: none;
+  padding: 5px 10px;
   border-radius: 5px;
-
-  transform: scale(1.1);
+  transition: background 0.3s;
 }
+
+nav ul a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .cart-icon {
-  font-size: 17px;
-  margin: 0 4px;
-
-  margin-top: 6px;
-}
-.cart-icon:hover {
+  font-size: 1.2rem;
   cursor: pointer;
-
-  transform: scale(1.01);
 }
 
+/* HERO / TEXT SECTION */
 .text {
   display: flex;
-  font-size: 90px;
-  color: whitesmoke;
   align-items: center;
   justify-content: center;
-  width: 100%;
   background-image: url(rs.jpg);
   background-size: cover;
-  height: 100vh;
+  background-position: center;
+  height: 80vh;
+  padding: 20px;
+  margin-top: 80px;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
 }
+
+/* MENU SECTION */
 .menu {
-  width: 100%;
-  /* height: 100vh; */
+  padding: 40px 20px;
   background-color: #000;
   color: white;
-  /* font-size: 30px; */
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
-h3 {
-  margin: 10px 500px;
-  font-size: 50px;
+
+.menu h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
+
 .items {
-  width: 30%;
+  background: #111;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
+
 .items img {
-  width: 400px;
-  height: 400px;
-  border-radius: 20px;
-}
-#menu h6 {
-  margin-left: 150px;
-  font-size: 50px;
-}
-.menu button {
-  background-color: black;
-  color: white;
-  font-size: 30px;
-  display: inline-block;
-  margin: 20px 130px;
-  margin-bottom: 40px;
-}
-.menu button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #000;
-}
-.about {
-  scroll-margin-top: 80px;
-  margin-top: 20px;
-}
-.about h2 {
-  margin: 10px 0px;
-}
-.about h4 {
-  font-size: 25px;
-  margin: 10px 0px;
-  margin-top: 30px;
-}
-form {
-  width: 350px;
-  background: #d3d3d3;
-  padding: 20px;
-  border-radius: 5px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-.contact {
-  margin-top: 50px;
   width: 100%;
-  background-color: rgb(184, 184, 183);
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
 }
-.contact b {
-  font-size: 30px;
-  margin: 20px 680px;
+
+.items h6 {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
-.contact p {
-  margin-top: 10px;
-  font-size: 19px;
-  font-family: cursive;
-}
-.contact label {
-  margin: 70px 5px;
-  font-weight: bold;
-  height: 60px; /* Textarea की height के बराबर कर दें */
-  line-height: 60px; /* इससे text पूरी height में center आ जाएगा */
-  font-weight: bold;
-}
-#query {
-  margin-top: 18px;
-}
-.contact input {
-  margin-top: 20px;
-  padding: 3px 3px;
-  /* color: #000; */
-  border: 1px solid black;
-}
-.contact h4 {
-  font-size: 25px;
-  /* margin-top: 10px; */
-  margin-top: 30px;
-}
-.contact i {
-  font-size: 30px;
-  margin: 0px 20px;
-  transition: transform 0.3s ease;
-  width: 50px;
-  height: 50px;
-  margin-top: 15px;
-}
-.contact i:hover {
-  /* font-size: 32px; */
-  cursor: pointer;
-  transform: scale(1.2);
-}
-.btn-container {
-  display: flex;
-  justify-content: center; /* बटन को सेंटर में लाने के लिए */
-  gap: 20px; /* दोनों बटन के बीच बराबर स्पेस */
-  margin-top: 15px;
-}
-button {
-  padding: 8px 15px;
+
+.menu button {
+  background-color: #d35400;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  min-width: 100px;
+  font-size: 1rem;
   margin-top: 10px;
 }
-.sumbit-btn {
-  background-color: rgb(19, 200, 19);
-  color: white;
+
+.menu button:hover {
+  background-color: white;
+  color: black;
 }
-.clear-btn {
-  background-color: rgb(218, 14, 14);
-  color: white;
+
+/* ABOUT SECTION */
+.about {
+  padding: 40px 20px;
+  background-color: #fff8e1;
 }
-footer {
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: auto;
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d35400;
+  font-size: 2rem;
+}
+
+.about h4 {
+  margin-top: 20px;
+  color: #d35400;
+}
+
+.about p,
+.about li {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+}
+
+.contact b {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  gap: 15px;
+  background: #d3d3d3;
+  padding: 20px;
+  border-radius: 10px;
 }
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.sumbit-btn {
+  background-color: green;
+  color: white;
+}
+
+.clear-btn {
+  background-color: red;
+  color: white;
+}
+
+.contact i {
+  font-size: 1.5rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.contact i:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
 @media (min-width: 600px) {
-  nav ul {
-    gap: 30px;
+  .text {
+    font-size: 2.5rem;
   }
 
-  .items {
-    max-width: 45%;
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact form {
-    max-width: 500px;
+  .items img {
+    max-width: 350px;
   }
 }
+
+/* Laptops & Desktops */
 @media (min-width: 900px) {
+  .text {
+    font-size: 3rem;
+  }
+
   nav {
     padding: 20px 50px;
   }
 
   nav ul {
-    gap: 40px;
+    gap: 30px;
   }
 
   .menu {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px;
+    padding: 60px 40px;
   }
 
-  .items {
-    max-width: 100%;
+  .items img {
+    max-width: 400px;
   }
 
   .about,
   .contact {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px;
-  }
-
-  .contact form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .contact input,
-  .contact textarea {
-    flex: 1 1 45%;
   }
 }
