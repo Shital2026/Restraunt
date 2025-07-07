@@ -250,3 +250,40 @@ footer {
     font-size: 1.1rem;
   }
 }
+@media (min-width: 900px) {
+  nav ul {
+    gap: 40px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .items {
+    margin: 15px;
+    width: 250px;
+  }
+
+  .about,
+  .contact {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .contact form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .contact input,
+  .contact textarea {
+    flex: 1 1 45%;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+}
